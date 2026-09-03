@@ -6,3 +6,5 @@ At the start, I will be learning the most important data structures and algorith
 A lot of these concepts are a review from previous courses I've taken. I am just brushing up before starting leetcode problems.
 
 The goal of this repo is to track my progress and stay consistent.
+
+LEETCODE PROBLEM TRACKER: <!--LEETCODE_COUNT-->0<!--/LEETCODE_COUNT-->
