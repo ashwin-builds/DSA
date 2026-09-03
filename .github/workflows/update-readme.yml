@@ -1,0 +1,26 @@
+name: Update LeetCode Count
+
+on:
+  push:
+    paths:
+      - 'leetcode/**'
+  workflow_dispatch:
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Count files and update README
+        run: |
+          COUNT=$(find leetcode -type f | wc -l)
+          sed -i -E "s/(<!--LEETCODE_COUNT-->)[0-9]+(<!--\/LEETCODE_COUNT-->)/\1${COUNT}\2/" README.md
+
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git diff --quiet README.md || (git add README.md && git commit -m "Update LeetCode problem count" && git push)
