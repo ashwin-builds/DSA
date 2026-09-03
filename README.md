@@ -7,4 +7,4 @@ A lot of these concepts are a review from previous courses I've taken. I am just
 
 The goal of this repo is to track my progress and stay consistent.
 
-LEETCODE PROBLEM TRACKER: <!--LEETCODE_COUNT-->8<!--/LEETCODE_COUNT-->
+**LEETCODE PROBLEM TRACKER: <!--LEETCODE_COUNT-->8<!--/LEETCODE_COUNT-->**
